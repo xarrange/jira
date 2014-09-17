@@ -130,7 +130,7 @@ else
 end
 # rubocop:enable BlockNesting
 
-default['jira']['apache2']['access_log']         = ''
+default['jira']['apache2']['access_log']         = 'jira_access.log'
 default['jira']['apache2']['error_log']          = ''
 default['jira']['apache2']['port']               = 80
 default['jira']['apache2']['virtual_host_alias'] = node['fqdn']
